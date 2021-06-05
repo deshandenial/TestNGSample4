@@ -20,7 +20,7 @@ public class LoginPage
 	private By password = By.xpath("//input[@name='password']");
 	private By loginButton = By.xpath("//button[text()='LOGIN']");
 	private By forgotPwd = By.xpath("//button[text()='Forgotten password?']");
-	//private By registerLink = By.linkText("Register");
+	
 	
 	
 	// constructor:
@@ -39,7 +39,7 @@ public class LoginPage
 	@Step("checking forgot pwd link...")
 	public boolean isForgotPwdLinkExist() 
 	{
-		elementUtil.waitForPresenceOfElement(Login, 10);
+		
 		elementUtil.doClick(Login);
 		return elementUtil.doIsDisplayed(forgotPwd);
 	}
@@ -48,12 +48,14 @@ public class LoginPage
 	  @Step("login with username: {0} and password: {1}") 
 	  public SelectPage doLogin(String un, String pwd) 
 	  { 
-		  elementUtil.clickWhenReady(Login, 500);
+		  
 		  elementUtil.doClick(Login);
 		  System.out.println("login with: " + un + " : " + pwd);
-		  elementUtil.waitForVisiblilityOfElement(username, 100);
-		  elementUtil.doSendKeys(username, un);
-		  elementUtil.waitForVisiblilityOfElement(password, 1000);
+		 
+		  elementUtil.doMoveToElement(username);
+		  elementUtil.doSendKeys1(username, un);
+		 elementUtil.doMoveToElement(password);
+		 
 		  elementUtil.doSendKeys(password, pwd);
 		  
 		  elementUtil.doClick(loginButton);
@@ -66,9 +68,11 @@ public class LoginPage
 		  elementUtil.clickWhenReady(Login, 500);
 		  elementUtil.doClick(Login);
 		  System.out.println("login with: " + un + " : " + pwd);
-		  elementUtil.waitForVisiblilityOfElement(username, 100);
-		  elementUtil.doSendKeys(username, un);
-		  elementUtil.waitForVisiblilityOfElement(password, 1000);
+		
+		  elementUtil.doMoveToElement(username);
+		  elementUtil.doSendKeys1(username, un);
+		 elementUtil.doMoveToElement(password);
+		  
 		  elementUtil.doSendKeys(password, pwd);
 		  
 		  elementUtil.doClick(loginButton);
@@ -77,13 +81,13 @@ public class LoginPage
 	  @Step("login with username: {0} and password: {1}") 
 	  public ButtonPage doLogin2(String un, String pwd) 
 	  { 
-		  elementUtil.clickWhenReady(Login, 500);
+		  
 		  elementUtil.doClick1(Login);
+		  
 		  System.out.println("login with: " + un + " : " + pwd);
-		  //elementUtil.waitForPresenceOfElement(username, 1000);
-		  elementUtil.waitForVisiblilityOfElement(username, 1000);
+		  elementUtil.doMoveToElement(username);
 		  elementUtil.doSendKeys1(username, un);
-		  elementUtil.waitForVisiblilityOfElement(password, 10000);
+		 elementUtil.doMoveToElement(password);
 		  elementUtil.doSendKeys1(password, pwd);
 		  
 		  elementUtil.doClick1(loginButton);

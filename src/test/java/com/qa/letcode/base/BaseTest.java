@@ -2,7 +2,7 @@ package com.qa.letcode.base;
 
 
 import java.util.Properties;
-
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 
@@ -38,6 +38,7 @@ public class BaseTest {
 		df = new DriverFactory();
 		driver =df.init_driver(browser);
 		driver.get("https://letcode.in/");
+		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
 		loginPage = new LoginPage(driver);
 		
 		 
