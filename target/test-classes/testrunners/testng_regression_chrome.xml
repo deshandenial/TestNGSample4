@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Demo Cart App Regression Test Suite" thread-count="4" parallel="tests" verbose="3">
+
+
+	
+	<test name="Login Page Test">
+		
+		<classes>
+			<class name="com.qa.letcode.tests.LoginPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Select Page Test">
+		
+		<classes>
+			<class name="com.qa.letcode.tests.SelectPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Input Page Test">
+		
+		<classes>
+			<class name="com.qa.letcode.tests.InputPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Button Page Test">
+		
+		<classes>
+			<class name="com.qa.letcode.tests.ButtonPageTest" />
+		</classes>
+	</test>
+
+
+
+</suite>

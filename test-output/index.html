@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Demo Cart App Regression Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Demo_Cart_App_Regression_Test_Suite" class="navigator-link ">
+                    <span>E:\TestNG Workspace\TestNGSample4\src\test\resources\testrunners\testng_regression_chrome.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Demo_Cart_App_Regression_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Demo_Cart_App_Regression_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Demo_Cart_App_Regression_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Demo_Cart_App_Regression_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Demo_Cart_App_Regression_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Demo_Cart_App_Regression_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" class="hide-methods failed suite-Demo_Cart_App_Regression_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Demo_Cart_App_Regression_Test_Suite -->
+                      <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" class="show-methods failed suite-Demo_Cart_App_Regression_Test_Suite"> (show)</a> <!-- show-methods failed suite-Demo_Cart_App_Regression_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Demo_Cart_App_Regression_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Demo_Cart_App_Regression_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" class="hide-methods passed suite-Demo_Cart_App_Regression_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Demo_Cart_App_Regression_Test_Suite -->
+                      <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" class="show-methods passed suite-Demo_Cart_App_Regression_Test_Suite"> (show)</a> <!-- show-methods passed suite-Demo_Cart_App_Regression_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Demo_Cart_App_Regression_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.SelectPageTest" class="method navigator-link" hash-for-method="SelectMultiple">SelectMultiple</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.SelectPageTest" class="method navigator-link" hash-for-method="accPageLogoTest">accPageLogoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.SelectPageTest" class="method navigator-link" hash-for-method="accPageTitleTest">accPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.LoginPageTest" class="method navigator-link" hash-for-method="forgotPwdLinkTest">forgotPwdLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.SelectPageTest" class="method navigator-link" hash-for-method="getFirstSelectedOption">getFirstSelectedOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.ButtonPageTest" class="method navigator-link" hash-for-method="inputTes1">inputTes1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.InputPageTest" class="method navigator-link" hash-for-method="inputTes1">inputTes1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.InputPageTest" class="method navigator-link" hash-for-method="inputTest2">inputTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.SelectPageTest" class="method navigator-link" hash-for-method="isMultiple">isMultiple</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.SelectPageTest" class="method navigator-link" hash-for-method="printAllValues">printAllValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.SelectPageTest" class="method navigator-link" hash-for-method="printSelectedvalue">printSelectedvalue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Cart_App_Regression_Test_Suite" title="com.qa.letcode.tests.SelectPageTest" class="method navigator-link" hash-for-method="selectByVisibleText">selectByVisibleText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Demo_Cart_App_Regression_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Demo_Cart_App_Regression_Test_Suite" class="panel Demo_Cart_App_Regression_Test_Suite">
+          <div class="suite-Demo_Cart_App_Regression_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.letcode.tests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;LetCode - Testing Hub&quot;. Current title: &quot;LetCode with Koushik&quot; (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESHAN&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9aea1f2f989f17ac1f69a2961f35bc34
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.letcode.utils.ElementUtil.waitForTitleIs(ElementUtil.java:349)
+	at com.qa.letcode.pages.SelectPage.getSelectPageTitle(SelectPage.java:38)
+	at com.qa.letcode.tests.LoginPageTest.loginTest(LoginPageTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demo_Cart_App_Regression_Test_Suite-class-failed -->
+          <div class="suite-Demo_Cart_App_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.letcode.tests.ButtonPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inputTes1">
+                  </a> <!-- inputTes1 -->
+                  <span class="method-name">inputTes1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demo_Cart_App_Regression_Test_Suite-class-passed -->
+          <div class="suite-Demo_Cart_App_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.letcode.tests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgotPwdLinkTest">
+                  </a> <!-- forgotPwdLinkTest -->
+                  <span class="method-name">forgotPwdLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageTitleTest">
+                  </a> <!-- loginPageTitleTest -->
+                  <span class="method-name">loginPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demo_Cart_App_Regression_Test_Suite-class-passed -->
+          <div class="suite-Demo_Cart_App_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.letcode.tests.InputPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inputTes1">
+                  </a> <!-- inputTes1 -->
+                  <span class="method-name">inputTes1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="inputTest2">
+                  </a> <!-- inputTest2 -->
+                  <span class="method-name">inputTest2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demo_Cart_App_Regression_Test_Suite-class-passed -->
+          <div class="suite-Demo_Cart_App_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.letcode.tests.SelectPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectMultiple">
+                  </a> <!-- SelectMultiple -->
+                  <span class="method-name">SelectMultiple</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accPageLogoTest">
+                  </a> <!-- accPageLogoTest -->
+                  <span class="method-name">accPageLogoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accPageTitleTest">
+                  </a> <!-- accPageTitleTest -->
+                  <span class="method-name">accPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getFirstSelectedOption">
+                  </a> <!-- getFirstSelectedOption -->
+                  <span class="method-name">getFirstSelectedOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isMultiple">
+                  </a> <!-- isMultiple -->
+                  <span class="method-name">isMultiple</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="printAllValues">
+                  </a> <!-- printAllValues -->
+                  <span class="method-name">printAllValues</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="printSelectedvalue">
+                  </a> <!-- printSelectedvalue -->
+                  <span class="method-name">printSelectedvalue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectByVisibleText">
+                  </a> <!-- selectByVisibleText -->
+                  <span class="method-name">selectByVisibleText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demo_Cart_App_Regression_Test_Suite-class-passed -->
+        </div> <!-- panel Demo_Cart_App_Regression_Test_Suite -->
+        <div panel-name="test-xml-Demo_Cart_App_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\TestNG Workspace\TestNGSample4\src\test\resources\testrunners\testng_regression_chrome.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Demo Cart App Regression Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;3&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Login Page Test&quot; verbose=&quot;3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.letcode.tests.LoginPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Page Test --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Select Page Test&quot; verbose=&quot;3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.letcode.tests.SelectPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Select Page Test --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Input Page Test&quot; verbose=&quot;3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.letcode.tests.InputPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Input Page Test --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Button Page Test&quot; verbose=&quot;3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.letcode.tests.ButtonPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Button Page Test --&gt;
+&lt;/suite&gt; &lt;!-- Demo Cart App Regression Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Demo_Cart_App_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Demo Cart App Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login Page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Select Page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Input Page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Button Page Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Demo_Cart_App_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Demo Cart App Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Demo_Cart_App_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Demo Cart App Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Demo_Cart_App_Regression_Test_Suite');
+function tableData_Demo_Cart_App_Regression_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.qa.letcode.tests.LoginPageTest')
+data.setCell(0, 3, 6553);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'selectByVisibleText')
+data.setCell(1, 2, 'com.qa.letcode.tests.SelectPageTest')
+data.setCell(1, 3, 5113);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'inputTes1')
+data.setCell(2, 2, 'com.qa.letcode.tests.InputPageTest')
+data.setCell(2, 3, 4916);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'inputTes1')
+data.setCell(3, 2, 'com.qa.letcode.tests.ButtonPageTest')
+data.setCell(3, 3, 4372);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getFirstSelectedOption')
+data.setCell(4, 2, 'com.qa.letcode.tests.SelectPageTest')
+data.setCell(4, 3, 1470);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'forgotPwdLinkTest')
+data.setCell(5, 2, 'com.qa.letcode.tests.LoginPageTest')
+data.setCell(5, 3, 1166);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'printSelectedvalue')
+data.setCell(6, 2, 'com.qa.letcode.tests.SelectPageTest')
+data.setCell(6, 3, 466);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'printAllValues')
+data.setCell(7, 2, 'com.qa.letcode.tests.SelectPageTest')
+data.setCell(7, 3, 371);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'SelectMultiple')
+data.setCell(8, 2, 'com.qa.letcode.tests.SelectPageTest')
+data.setCell(8, 3, 348);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'isMultiple')
+data.setCell(9, 2, 'com.qa.letcode.tests.SelectPageTest')
+data.setCell(9, 3, 160);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'accPageTitleTest')
+data.setCell(10, 2, 'com.qa.letcode.tests.SelectPageTest')
+data.setCell(10, 3, 151);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'accPageLogoTest')
+data.setCell(11, 2, 'com.qa.letcode.tests.SelectPageTest')
+data.setCell(11, 3, 117);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginPageTitleTest')
+data.setCell(12, 2, 'com.qa.letcode.tests.LoginPageTest')
+data.setCell(12, 3, 55);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'inputTest2')
+data.setCell(13, 2, 'com.qa.letcode.tests.InputPageTest')
+data.setCell(13, 3, 6);
+window.suiteTableData['Demo_Cart_App_Regression_Test_Suite']= { tableData: data, tableDiv: 'times-div-Demo_Cart_App_Regression_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <div id="times-div-Demo_Cart_App_Regression_Test_Suite">
+              </div> <!-- times-div-Demo_Cart_App_Regression_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Demo_Cart_App_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Demo Cart App Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Demo_Cart_App_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Demo_Cart_App_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">6 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">AccSetUp</span>
+                <span class="method-start">23148 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">AccSetUp</span>
+                <span class="method-start">24708 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">AccSetUp</span>
+                <span class="method-start">25074 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">selectByVisibleText</span>
+                <span class="method-start">26922 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">inputTes1</span>
+                <span class="method-start">27423 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginPageTitleTest</span>
+                <span class="method-start">27828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">forgotPwdLinkTest</span>
+                <span class="method-start">28163 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">29340 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">inputTes1</span>
+                <span class="method-start">30734 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">accPageTitleTest</span>
+                <span class="method-start">32134 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">accPageLogoTest</span>
+                <span class="method-start">32289 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">inputTest2</span>
+                <span class="method-start">32342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32351 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">isMultiple</span>
+                <span class="method-start">32410 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SelectMultiple</span>
+                <span class="method-start">32573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">printAllValues</span>
+                <span class="method-start">32925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">printSelectedvalue</span>
+                <span class="method-start">33300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getFirstSelectedOption</span>
+                <span class="method-start">33770 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35109 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35244 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.letcode.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35901 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
